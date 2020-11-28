@@ -1,2 +1,2 @@
-# samples
-Samples and POC
+# Sample and Proof Of Concept Code
+
