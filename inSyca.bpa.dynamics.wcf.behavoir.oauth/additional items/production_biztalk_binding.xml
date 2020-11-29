@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="NoBindings" BoundEndpoints="0" TotalEndpoints="0">
+  <Timestamp>2020-11-23T09:18:24.4756393+01:00</Timestamp>
+  <SendPortCollection>
+    <SendPort Name="SP_CRM_OAUTH" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>https://YOUR-DYNAMICS-TENANT/XRMServices/2011/Organization.svc/web</Address>
+        <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
+        <TransportTypeData>
+          &lt;CustomProps&gt;&lt;BindingType vt="8"&gt;customBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="2e10cfa8-4392-4efd-8a4c-be88c96a6142"&amp;gt;&amp;lt;textMessageEncoding messageVersion="Soap11" /&amp;gt;&amp;lt;httpsTransport /&amp;gt;&amp;lt;/binding&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+          &amp;lt;Operation Name="Create" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/Create" /&amp;gt;
+          &amp;lt;Operation Name="Update" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/Update" /&amp;gt;
+          &amp;lt;Operation Name="RetrieveMultiple" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/RetrieveMultiple" /&amp;gt;
+          &amp;lt;Operation Name="Retrieve" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/Retrieve" /&amp;gt;
+          &amp;lt;Operation Name="Associate" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/Associate" /&amp;gt;
+          &amp;lt;Operation Name="Disassociate" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/Disassociate" /&amp;gt;
+          &amp;lt;Operation Name="Delete" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/Delete" /&amp;gt;
+          &amp;lt;Operation Name="Execute" Action="http://schemas.microsoft.com/xrm/2011/Contracts/Services/IOrganizationService/Execute" /&amp;gt;
+          &amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8" /&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;inSycaOAuth tenantId="YOUR-TENANT-ID" resourceUrl="YOUR-RESSOURCE-URL" clientId="YOUR-CLIENT-ID" clientSecret="YOUR-CLIENT-SECRET" /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;
+        </TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>204</Tracking>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+    </SendPort>
+  </SendPortCollection>
+</BindingInfo>

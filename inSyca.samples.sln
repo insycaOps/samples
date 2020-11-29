@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inSyca.bpa.dynamics.wcf.behavior.oauth", "inSyca.bpa.dynamics.wcf.behavoir.oauth\inSyca.bpa.dynamics.wcf.behavior.oauth.csproj", "{272E5F69-A9B5-4881-A451-CA45FCC0C430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inSyca.samples.test", "inSyca.samples.test\inSyca.samples.test.csproj", "{720789F5-BF64-4091-A5B1-67DA72B8F47B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{272E5F69-A9B5-4881-A451-CA45FCC0C430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272E5F69-A9B5-4881-A451-CA45FCC0C430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272E5F69-A9B5-4881-A451-CA45FCC0C430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272E5F69-A9B5-4881-A451-CA45FCC0C430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{720789F5-BF64-4091-A5B1-67DA72B8F47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{720789F5-BF64-4091-A5B1-67DA72B8F47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{720789F5-BF64-4091-A5B1-67DA72B8F47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{720789F5-BF64-4091-A5B1-67DA72B8F47B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B9DDE46-2421-4C87-86D9-0453DC1401E9}
+	EndGlobalSection
+EndGlobal
