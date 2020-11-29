@@ -1,2 +1,2 @@
-# Sample and Proof Of Concept Code
+# Samples and Proof Of Concept Code
 
